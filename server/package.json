@@ -1,0 +1,40 @@
+{
+  "name": "socketio-react-chat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enicolasgomez/react-socketio-cha.git"
+  },
+  "keywords": [],
+  "author": "enicolasgomez@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/enicolasgomez/react-socketio-chat.git"
+  },
+  "homepage": "https://github.com/enicolasgomez/react-socketio-chat#readme",
+  "dependencies": {
+    "lodash": "^4.17.10",
+    "openid-client": "^2.1.0",
+    "shortid": "^2.2.11",
+    "socket.io": "^2.1.1"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.11",
+    "@types/lodash": "^4.14.116",
+    "@types/mocha": "^7.0.2",
+    "@types/node": "^10.3.5",
+    "@types/shortid": "0.0.29",
+    "@types/socket.io": "^1.4.36",
+    "chai": "^4.2.0",
+    "mocha": "^7.1.2",
+    "nyc": "^15.0.1",
+    "ts-node": "^8.10.1",
+    "typescript": "^2.9.2"
+  },
+  "scripts": {
+    "test": "mocha -r ts-node/register tests/test.ts",
+    "coverage": "nyc -r lcov -e .ts -x \"*.test.ts\" npm run test"
+  }
+}

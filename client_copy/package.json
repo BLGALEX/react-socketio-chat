@@ -1,0 +1,50 @@
+{
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "proxy": {
+    "/socket.io": {
+      "target": "http://localhost:8081/",
+      "ws": true
+    }
+  },
+  "dependencies": {
+    "@blueprintjs/core": "^3.0.0",
+    "@blueprintjs/icons": "^3.0.0",
+    "@microlink/react": "^5.2.2",
+    "@types/lodash": "^4.14.151",
+    "emoji-mart": "^3.0.0",
+    "emoji-picker-react": "^3.1.6",
+    "emojione-picker": "^2.2.2",
+    "get-urls": "^9.2.0",
+    "lodash": "^4.17.15",
+    "moment": "^2.25.3",
+    "normalize.css": "^8.0.0",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-emojione": "^5.0.1",
+    "react-router-dom": "^4.3.1",
+    "react-scripts-ts": "^2.16.0",
+    "react-simple-linkify": "^1.0.3",
+    "react-transition-group": "^2.4.0",
+    "react-youtube-player": "^2.0.1",
+    "socket.io-client": "^2.1.1",
+    "styled-components": "^3.3.3"
+  },
+  "scripts": {
+    "start": "react-scripts-ts start",
+    "build": "react-scripts-ts build",
+    "test": "react-scripts-ts test --env=jsdom",
+    "eject": "react-scripts-ts eject"
+  },
+  "devDependencies": {
+    "@types/node": "^10.5.2",
+    "@types/react": "^16.4.6",
+    "@types/react-dom": "^16.0.6",
+    "@types/react-router-dom": "^4.2.7",
+    "@types/react-transition-group": "^2.0.11",
+    "@types/socket.io-client": "^1.4.32",
+    "file-loader": "^1.1.11",
+    "typescript": "^2.9.2"
+  }
+}
